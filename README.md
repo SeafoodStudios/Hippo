@@ -5,9 +5,12 @@ Ever wanted a safe, cute antivirus? Well, Hippo solves that for you. The antivir
 Hippo works for new versions of MacOS. To download this app, go here: [https://seafoodstudios.itch.io/hippo](https://seafoodstudios.itch.io/hippo). To use Hippo, download the DMG from the itch.io site. Follow the instructions in the README.txt file in the DMG to ensure the app runs.
 
 ## Screenshots of App
-![Scanning System](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot1.png)
-![Waiting for Options](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot2.png)
-![Safe File/System](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot3.png)
+
+<img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot1.png" alt="Scanning System" width="300"/>
+
+<img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot2.png" alt="Waiting for Options" width="300"/>
+
+<img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot3.png" alt="Safe File/System" width="300"/>
 
 ## Credits
 Thanks to Python, because that's this project's programming language. Thanks to ChatGPT, who generated the YARA file, and guided me through debugging (this is my first Tkinter GUI project). Thanks to everyone who downloads this, because without them, there would be no success in this project.
