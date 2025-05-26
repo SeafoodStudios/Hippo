@@ -1,10 +1,13 @@
 # Hippo Antivirus
-Ever wanted a safe, cute antivirus? Well, Hippo solves that for you. With an adorable companion (a hippo), you are encouraged to keep your system clean and safe.
+Ever wanted a safe, cute antivirus? Well, Hippo solves that for you. The antivirus cannot edit your system, but can read it, so that it can keep you and your system safe. With an adorable companion (a hippo), you are encouraged to keep your system clean and safe.
 
-To download this, go here: [https://seafoodstudios.itch.io/hippo](https://seafoodstudios.itch.io/hippo)
+## How To Download
+Hippo works for new versions of MacOS. To download this app, go here: [https://seafoodstudios.itch.io/hippo](https://seafoodstudios.itch.io/hippo). To use Hippo, download the DMG from the itch.io site. Follow the instructions in the README.txt file in the DMG to ensure the app runs.
 
-Thanks to Python, because that's this project's programming language.
+## Screenshots of App
+![Scanning System](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot1.png)
+![Waiting for Options](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot2.png)
+![Safe File/System](https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot3.png)
 
-Thanks to ChatGPT, who generated the YARA file, and guided me through debugging (this is my first Tkinter GUI project).
-
-Thanks to everyone who downloads this, because without you, there would be no success in this project.
+## Credits
+Thanks to Python, because that's this project's programming language. Thanks to ChatGPT, who generated the YARA file, and guided me through debugging (this is my first Tkinter GUI project). Thanks to everyone who downloads this, because without them, there would be no success in this project.
