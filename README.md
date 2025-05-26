@@ -6,9 +6,9 @@ Hippo works for new versions of MacOS. To download this app, go here: [https://s
 
 ## Screenshots of App
 <div style="display: flex; gap: 10px;">
-  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot1.png" alt="Scanning System" width="300"/>
-  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot2.png" alt="Waiting for Options" width="300"/>
-  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot3.png" alt="Safe File/System" width="300"/>
+  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot1.png" alt="Scanning System" width="150"/>
+  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot2.png" alt="Waiting for Options" width="150"/>
+  <img src="https://raw.githubusercontent.com/SeafoodStudios/Hippo/refs/heads/main/static/screenshot3.png" alt="Safe File/System" width="150"/>
 </div>
 
 ## Credits
