@@ -1,0 +1,68 @@
+rule advanced_malware_detection
+{
+    meta:
+        description = "Advanced detection rule for suspicious file indicators"
+        author = "ChatGPT Security Researcher"
+        date = "2023-05-25"
+        last_modified = "2023-05-25"
+        reference = "https://www.malwarebytes.com/malware"
+        license = "Creative Commons"
+        severity = "high"
+        version = "1.0"
+
+    strings:
+        // Malicious URLs commonly used by malware for command and control (C2) or payload delivery
+        $url1 = "http://malicious-site.com" nocase
+        $url2 = "https://malware-download.xyz" nocase
+        $url3 = "http://payload-server.com" nocase
+        $url4 = "https://example.com/malware" nocase
+        $url5 = "http://exploit.xyz" nocase
+        $url6 = "http://evil.com/evil" nocase
+
+        // Suspicious user-agent strings often found in malicious payloads
+        $ua1 = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" nocase
+        $ua2 = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0" nocase
+        $ua3 = "curl/7.52.1" nocase
+
+        // Known file and directory paths used by malware (exploits, droppers, etc.)
+        $path1 = "C:\\Windows\\System32\\malicious.exe" nocase
+        $path2 = "C:\\Users\\Public\\Downloads\\payload.exe" nocase
+        $path3 = "C:\\Users\\Administrator\\AppData\\Roaming\\malware\\loader.exe" nocase
+
+        // Common shellcode patterns (often used in exploits or malware delivery)
+        $shellcode1 = { 89 E5 83 EC 10 83 C4 04 89 45 F4 } // Common shellcode pattern
+        $shellcode2 = { 90 90 90 90 90 90 90 90 90 90 }  // NOP sled pattern
+
+        // Known suspicious file signatures (e.g., packed executables, obfuscated code)
+        $packed1 = { 4D 5A 90 00 03 00 00 00 04 00 00 00 }  // MZ header for PE files (packed files)
+        $packed2 = { 60 61 62 63 64 65 66 67 68 69 6A 6B }  // Packed or obfuscated code sequence
+
+        // Base64 encoded data often used to obfuscate malicious payloads
+        $base64_1 = "aGVsbG8gd29ybGQ=" nocase  // "hello world" in base64
+        $base64_2 = "c2VjdXJpdHk=" nocase      // "security" in base64
+
+        // Known malware-specific strings
+        $malware1 = "malware" nocase
+        $malware2 = "trojan" nocase
+        $malware3 = "backdoor" nocase
+        $malware4 = "keylogger" nocase
+        $malware5 = "exploit" nocase
+        $malware6 = "rootkit" nocase
+        $malware7 = "injector" nocase
+
+        // Potentially malicious JavaScript (could be embedded in .html, .js, or .svg files)
+        $js1 = "<script>" nocase
+        $js2 = "eval(" nocase
+        $js3 = "document.location=" nocase
+
+    condition:
+        // Match any of the malicious indicators (URLs, shellcode, suspicious strings)
+        any of ($url*) or
+        any of ($ua*) or // Add $ua* to reference all user-agent strings
+        any of ($path*) or
+        any of ($shellcode*) or
+        any of ($packed*) or
+        any of ($base64_*) or
+        any of ($malware*) or
+        any of ($js*)
+}
