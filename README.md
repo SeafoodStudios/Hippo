@@ -15,8 +15,9 @@ Hippo works for new versions of MacOS. To download this app, go here: [https://s
 </div>
 
 ## Changelog
-* 1.0 - Created Hippo
+* 1.0 - Created Hippo, with system scan and file scanning buttons.
 
 * 1.5 - Added loading bar to ensure that the user feels safer. Added scrolling in windows to prevent overflow of text. Added YARA updating button so that people don't have to manually update the app. Limited YARA compiling in system scan to compile once to ensure a more efficient and quick system scan.
+
 ## Credits
 Thanks to Python, because that's this project's programming language. Thanks to ChatGPT, who generated the YARA file, and guided me through debugging (this is my first Tkinter GUI project). Thanks to everyone who downloads this, because without them, there would be no success in this project.
