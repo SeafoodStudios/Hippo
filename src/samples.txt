@@ -1,4 +1,4 @@
-rule macos_generic_malware
+rule HippoMalwareRules
 {
     meta:
         description = "Production-ready detection for macOS malware behaviors"
